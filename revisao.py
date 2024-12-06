@@ -6,7 +6,7 @@ while True:
     if escolha_menu == 1: #se a escolha for para realizar u
         
         cont = 0
-        escolha_usuario = int(input("Deseja calcular a média de quantos alunos?")) #variavel que guarda quantas vezes o codigo vai rodar
+        escolha_usuario = int(input("Digite quantos alunos deseja cadastrar:")) #variavel que guarda quantas vezes o codigo vai rodar
         while cont < escolha_usuario:
             nome = (input("Digite o nome do aluno:")) #ARMAZENAR o nome do aluno
             
