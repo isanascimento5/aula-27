@@ -8,7 +8,7 @@ while True:
         cont = 0
         escolha_usuario = int(input("Deseja calcular a média de quantos alunos?")) #variavel que guarda quantas vezes o codigo vai rodar
         while cont < escolha_usuario:
-            nome = (input("Digite o nome do aluno:9")) #ARMAZENAR o nome do aluno
+            nome = (input("Digite o nome do aluno:")) #ARMAZENAR o nome do aluno
             
             nota1 = float(input("Digite a nota 1 do aluno:")) #4 notas do aluno
             nota2 = float(input("Digite a nota 2 do aluno:"))
@@ -18,6 +18,7 @@ while True:
             faltas = int(input("Digite a quantidade das faltas:"))
             #calculo da média
             media = (nota1+nota2+nota3+nota4)/4
+            print(media)
 
             #logica da situação
             if faltas > 31:
@@ -37,3 +38,5 @@ while True:
             cont += 1
     elif escolha_menu == 2: #Relatorio
         print(alunos)
+    elif escolha_menu == 3: #se o usúario escolheu encerrar
+        break #Quebra a execução enquanto
